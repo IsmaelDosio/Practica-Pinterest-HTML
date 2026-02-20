@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Añado la etiqueta canonical para indicar que copiapinterest-ismael.com es la pagina original 
+     para diferenciar de las modificaciones de la URL con las navegaciones -->
+    <link rel="canonical" href="https://copiapinterest-ismael.com" />
+    <title>Practica Pinterest-Ismael</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo con enlace a la home de la pagina web -->
+      <a href="#inicio">
+        <img
+          src="/PRACTICAS/Pinterest/images/logo pinterest isma.png"
+          alt="Este es el logo de la mi web, te dirige a la pagina de inicio"
+        />
+      </a>
+      <!-- Aqui con un nav, añado las tres navegaciones a las secciones inicio, explorar y crear.
+         Uso nav con una lista desordenada y tres li -->
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#explorar">Explorar</a></li>
+          <li><a href="#crear">Crear</a></li>
+        </ul>
+      </nav>
+      <!-- Este es el area de buscador, use un form con metodo GET, que lleva a un sitio ficticio: /search
+       con un label para accesibilidad y un input -->
+      <form method="get" action="/search">
+        <label for="search">Busca imagenes</label>
+        <input
+          type="search"
+          id="search"
+          name="query"
+          placeholder="busca ideas,pines,etc"
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+      <details>
+        <summary>
+            <img src="images/fotoperfil.jpg" alt="foto de perfil para abrir menu de perfil" width="50">
+        </summary>
+        <ul>
+            <li><a href="cuenta.html">Tu cuenta</a></li>
+            <li><a href="editar-perfil.html">Edita tu perfil</a></li>
+            <li><a href="cerrar-sesion.html">Cierra sesión</a></li>
+        </ul>
+      </details>
+    </header>
+    <main>
+      <!--Creamos la lista de pines, utilizo una section y dentro una ul con varios li, dentro de cada li, un article
+    y dentro de cada artícle una img, de este modo los pines dentro del feed principal, son una lista de pines  -->
+      <section id="inicio">
+        <h2>Feed</h2>
+        <ul>
+          <li>
+            <article>
+              <h3>Idea de escritorio clasico</h3>
+              <!-- los artículos apuntan a paginas separadas -->
+              <a href="pin-1.html">
+                <img
+                  src="images/freepik__the-style-is-candid-image-photography-with-natural__79815.png"
+                  alt="escritorio con fondo azul"
+                  loading="lazy"
+                  width="200"
+                />
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Idea escritorio natural</h3>
+              <a href="pin-2.html">
+                <img
+                  src="images/freepik__the-style-is-candid-image-photography-with-natural__79816.png"
+                  alt="escritorio con luz natural entrando por la ventana"
+                  loading="lazy"
+                  width="200"
+                />
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Idea de escritorio fururista</h3>
+              <a href="pin-3.html">
+                <img
+                  src="images/freepik__the-style-is-candid-image-photography-with-natural__79817.png"
+                  alt="escritorio con luz de neon"
+                  loading="lazy"
+                  width="200"
+                />
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- Creo las tres secciones a las que apuntan cada uno de los tres li del header -->
+      </section>
+      <section id="explorar">
+        <h2>Explora las categorias</h2>
+         <ul>
+            <li>
+                <h3><a href="categoria-minimalismo.html">Minimalismo</a></h3>
+            </li>
+            <li>
+                <h3><a href="categoria-animales.html">Animales</a></h3>
+            </li>
+            <li>
+                <h3><a href="categoria-surfing.html">Surfing</a></h3>
+            </li>
+        </ul>
+      </section>
+      <section id="crear">
+        <h2>Haz tus propias creaciones</h2>
+        <form method="post" action="#" enctype="multipart/form-data">
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <br><br>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" maxlength="200"></textarea>
+            <br><br>
+            <label for="subir-imagen">Subir imagen</label>
+            <input type="file" id="subir-imagen" name="imagen" accept="image/*">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+      </section>
+      <br><br>
+      <aside>
+        <a href="ayuda.html" aria-label="Ayuda">?</a>
+        <title>Ayuda</title>
+      </aside>
+    <footer>
+        <ul>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+        <p>Siguenos en redes sociales</p>
+        <ul>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://X.com">X</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+        </ul>
+        <small>@ copyright Ismael Dosio</small>
+    </footer>
+    </main>
+  </body>
+ 
+</html>
