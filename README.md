@@ -54,8 +54,8 @@ Dentro del Body tengo:
             un Parrafo para introcudir el siguenos en redes sociales, con ul +li
             Uso la etiqueta small para hacer el texto del copyright más pequeño
 
-
-
+## ARQUITECTURA
+![Arquitectura del HTML](docs/arquitectura.png)
 
 DOCUMENTACION: 
     https://keepcoding.io/blog/como-hacer-un-buscador-en-html/
