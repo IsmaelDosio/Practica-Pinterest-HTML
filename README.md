@@ -59,9 +59,11 @@ Dentro del Body tengo:
 
 DOCUMENTACION: 
     https://keepcoding.io/blog/como-hacer-un-buscador-en-html/
+    
     https://stackoverflow.com/questions/4526273/what-does-enctype-multipart-form-data-mean#:~:text=enctype%3D%22multipart%2Fform%2Ddata%22%20is%20an%20encoding,you%20must%20use%20this%20enctype.
     https://www.w3schools.com/tags/att_form_enctype.asp
     https://www.w3schools.com/tags/tag_small.asp
+    https://docs.github.com/es?search-overlay-open=true&search-overlay-input=open+documentation+about+git+remote+add+origin+%3CREMOTE-URL%3E&search-overlay-ask-ai=true
     IA: 
         GPT
         NotebookLM con los apuntes del modulo.
